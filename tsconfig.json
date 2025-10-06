@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "noErrorTruncation": true,
+
+    // Keep these mappings synchronized with the ones in jest.config.js as you add new modules
+    "paths": {
+      "@module/*": ["src/modules/*"],
+      "@agent/*": ["src/modules/agent/*"],
+      "@bank/*": ["src/modules/bank/*"],
+      "@beneficiary/*": ["src/modules/beneficiary/*"],
+      "@cybrid/*": ["src/modules/cybrid/*"],
+      "@health/*": ["src/modules/health/*"],
+      "@kyc/*": ["src/modules/kyc/*"],
+      "@processing-bank/*": ["src/modules/processing-bank/*"],
+      "@quote/*": ["src/modules/quote/*"],
+      "@rate/*": ["src/modules/rate/*"],
+      "@transaction/*": ["src/modules/transaction/*"],
+      "@base/*": ["src/base/*"],
+      "@config/*": ["src/config/*"],
+      "@book/*": ["src/modules/book/*"],
+      "@genre/*": ["src/modules/genre/*"],
+      "@iam/*": ["src/modules/iam/*"],
+      "@test/*": ["src/test/*"],
+      "@/*": ["src/*"],
+      "@root/*": ["*"],
+      "@data/*": ["data/*"]
+    }
+  }
+}

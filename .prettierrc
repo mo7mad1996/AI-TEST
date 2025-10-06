@@ -1,0 +1,29 @@
+{
+  "endOfLine": "lf",
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@data/(.*)$",
+    "^@base/(.*)$",
+    "^@config/(.*)$",
+    "^@book/(.*)$",
+    "^@genre/(.*)$",
+    "^@iam/(.*)$",
+    "^@test/(.*)$",
+    "^@/(.*)$",
+    "^@root/(.*)$",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": [
+    "typescript",
+    "classProperties",
+    "[\"decorators-legacy\", { \"decoratorsBeforeExport\": true }]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "printWidth": 100,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}
